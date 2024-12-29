@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xogame/Board_Screen.dart';
 import 'package:xogame/Home_Screen.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -34,6 +36,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         HomeScreen.routName:(_)=>HomeScreen(),
+        BoardScreen.routeName:(_)=>BoardScreen(),
       },
       initialRoute: HomeScreen.routName,
     );
